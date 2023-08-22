@@ -1,0 +1,41 @@
+body {
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav li {
+    margin-bottom: 20px;
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 36px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    filter: blur(4px);
+    transition: opacity 0.3s, font-size 0.3s, filter 0.3s;
+  }
+  
+  nav li a:hover {
+    opacity: 1;
+    filter: blur(0);
+  }
+  

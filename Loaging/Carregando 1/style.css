@@ -1,0 +1,43 @@
+.loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .progress-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #f3f3f3; /* cor de fundo da barra de progresso */
+    position: relative;
+  }
+  
+  .progress-bar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%; /* Progresso inicial */
+    background-color: #3498db; /* cor do progresso */
+    animation: progress 3s linear;
+  }
+  
+  @keyframes progress {
+    0% { width: 0%; }
+    100% { width: 100%; }
+  }
+  
+  .message {
+    margin-top: 20px;
+    font-size: 18px;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.5s ease-in-out; /* Transição suave de opacidade */
+  }
+  
+  .loaded .message {
+    opacity: 1; /* Mensagem visível quando carregado */
+  }
+  

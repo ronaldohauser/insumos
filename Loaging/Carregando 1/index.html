@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carregando...</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="loader">
+    <div class="progress-bar"></div> <!-- Elemento de barra de progresso -->
+    <div class="message">Carregando...</div> <!-- Mensagem de carregamento -->
+  </div>
+
+  <script>
+    // Simulação de carregamento do jogo
+    setTimeout(function() {
+      document.body.classList.add('loaded'); // Adiciona a classe "loaded" para exibir o conteúdo do jogo
+    }, 3000); // Tempo em milissegundos (3 segundos)
+  </script>
+</body>
+</html>
